@@ -1,0 +1,11 @@
+$width: 100vw;
+$heigh: 100vh;
+
+$background-color: silver;
+
+.scene{
+  width: $width;
+  height: $heigh;
+
+  background-color: $background-color;
+}

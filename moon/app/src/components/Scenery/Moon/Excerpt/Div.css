@@ -1,0 +1,7 @@
+.div {
+  height: 2px;
+  margin: 1em auto;
+  background-color: #0D9AE8; }
+
+.div--partial {
+  width: 2.5em; }

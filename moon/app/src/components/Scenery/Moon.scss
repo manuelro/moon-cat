@@ -1,0 +1,98 @@
+$size: 2cm;
+$color: white;
+$top: 100% / 5;
+$right: 100% / 4;
+
+$overlap-color: black;
+$overlap-offset: 30%;
+
+$moon--morph-border-radius: 5px;
+
+$transition-duration: 0.7s;
+
+.moon{
+  background-color: $color;
+
+  width: $size;
+  height: $size;
+  max-width: 90%;
+  max-height: 80%;
+
+  margin: auto;
+
+  position: relative;
+  top: $top;
+  right: $right;
+
+  border-radius: $size;
+
+  transition-property: all;
+  transition-delay: $transition-duration / 2;
+  transition-duration: $transition-duration;
+  transition-timing-function: ease-out;
+
+  &::before{
+    content: '';
+    background-color: $overlap-color;
+
+    width: $size;
+    height: $size;
+
+    display: block;
+
+    position: relative;
+    left: $overlap-offset;
+    bottom: $overlap-offset;
+
+    border-radius: $size;
+
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: $transition-duration;
+    transition-timing-function: ease-out;
+  }
+
+  > .moon__excerpt{
+    opacity: 0;
+    transform: scale(0);
+
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: $transition-duration / 2;
+    transition-timing-function: ease-out;
+  }
+}
+
+.moon--morphed{
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  width: 90%;
+  height: 70%;
+
+  max-width: 400px;
+  max-height: 600px;
+
+  top: 50%;
+  right: 0;
+
+  transform: translateY(-50%);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  border-radius: $moon--morph-border-radius;
+
+  transition-delay: 0s;
+
+  &::before{
+    width: 0;
+    height: 0;
+  }
+
+  > .moon__excerpt{
+    opacity: 1;
+    transform: scale(1);
+
+    transition-delay: $transition-duration / 2;
+  }
+}

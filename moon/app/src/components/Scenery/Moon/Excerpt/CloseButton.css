@@ -1,0 +1,13 @@
+.close-button {
+  width: 40px;
+  height: 40px;
+  margin: 1em auto;
+  border-radius: 40px;
+  background-color: #FF3642;
+  text-align: center; }
+
+.close-button__icon {
+  width: 40%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }

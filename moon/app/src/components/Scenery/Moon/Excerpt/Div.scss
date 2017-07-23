@@ -1,0 +1,13 @@
+$thickness: 2px;
+$background-color: #0D9AE8;
+
+.div{
+  height: $thickness;
+  margin: 1em auto;
+
+  background-color: $background-color;
+}
+
+.div--partial{
+  width: 2.5em;
+}

@@ -1,0 +1,21 @@
+$size: 40px;
+$background-color: #FF3642;
+
+.close-button{
+  width: $size;
+  height: $size;
+  margin: 1em auto;
+
+  border-radius: $size;
+  background-color: $background-color;
+
+  text-align: center;
+}
+
+.close-button__icon{
+  width: 40%;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

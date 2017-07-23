@@ -1,0 +1,58 @@
+.moon {
+  background-color: white;
+  width: 2cm;
+  height: 2cm;
+  max-width: 90%;
+  max-height: 80%;
+  margin: auto;
+  position: relative;
+  top: 20%;
+  right: 25%;
+  border-radius: 2cm;
+  transition-property: all;
+  transition-delay: 0.35s;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-out; }
+  .moon::before {
+    content: '';
+    background-color: black;
+    width: 2cm;
+    height: 2cm;
+    display: block;
+    position: relative;
+    left: 30%;
+    bottom: 30%;
+    border-radius: 2cm;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out; }
+  .moon > .moon__excerpt {
+    opacity: 0;
+    transform: scale(0);
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-out; }
+
+.moon--morphed {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 90%;
+  height: 70%;
+  max-width: 400px;
+  max-height: 600px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 5px;
+  transition-delay: 0s; }
+  .moon--morphed::before {
+    width: 0;
+    height: 0; }
+  .moon--morphed > .moon__excerpt {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.35s; }
